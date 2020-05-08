@@ -23,8 +23,9 @@ module Snapshot
     end
 
     def kill_simulator
-      `killall 'iOS Simulator' &> /dev/null`
-      `killall Simulator &> /dev/null`
+      # `killall 'iOS Simulator' &> /dev/null`
+      # `killall Simulator &> /dev/null`
+      `open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app &> /dev/null`
     end
   end
 
